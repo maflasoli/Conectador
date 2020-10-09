@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         protected Void doInBackground(Void... voids) {
             try{
                 Class.forName("com.mysql.jdbc.Driver");
-                Connection conexao= DriverManager.getConnection("jdbc:mysql://192.168.29.2:3306/quim1","root","19twostars");
+                Connection conexao= DriverManager.getConnection("jdbc:mysql://192.168.0.116:3306/quim1","root","19twostars");
                 Statement stmt = conexao.createStatement();
                 ResultSet rsResultado = stmt.executeQuery("select nomealuno from testealuno");
 
